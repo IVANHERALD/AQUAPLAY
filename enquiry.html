@@ -1,0 +1,73 @@
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["fname1"].value;
+  if (x == "") {
+    alert("Company Name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["fname2"].value;
+  if (x > 10) {
+    alert("phone number must not exceed 10 digits");
+    return false;
+  }
+}
+</script>
+<style>
+h2.round{
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color:yellow;
+  opacity:0.6;
+  color:red;
+}
+.button {
+  background-color: #98a887;
+}
+video {
+  width: 70%;
+  height: auto;
+  float:right;
+}
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color:red;
+}
+</style>
+</head>
+<body>
+<h2 class="round"><CENTER><i><br><br>LAKSHMI ENGINEERING INDUSTRIES<br><br><br></i></CENTER></h2>
+<a href="LEIHOME.html">HOME</a>&nbsp;&nbsp;
+<a href="products.html">PRODUCTS</a>&nbsp;&nbsp;
+<a href="contact.html">CONTACT</a>&nbsp;&nbsp;
+<a href="enquiry.html">ENQUIRY</a>&nbsp;&nbsp;<br>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<br><br><video width="100%" height="100%" loop autoplay muted id="myVideo">
+  <source src="D:\water\a.webm" type="video/mp4" video width="140">
+  </video>
+  <br><b>Name: </b><br>
+    <input type="text" name="fname" STYLE= "width:250px"><br><br>
+ <b>Company Name:</b>  <br><input type="text" name="fname1" STYLE= "width:250px"><br><br>
+ <b>City:</b> <br><input type="text" STYLE= "width:250px"><br><br>
+  <b>Phone:</b> <br><input type="text" name="fname2" STYLE= "width:250px"><br><br>
+  <b>Email-id:</b><br><input type="text" name="fname3" STYLE= "width:250px"><br><br>
+  <label for="Enquiry"><b>Enquiry/Feedback:</b></label><br><textarea id="w3mission" rows="4" cols="22" STYLE= "width:250px"></textarea><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="button"></div><input type="submit" value="Submit" style="width:70px;"> &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel" style="width:70px;"></form></div>
+</form>
+</body>
+</html>
